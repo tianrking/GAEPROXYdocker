@@ -4,7 +4,7 @@ ENV REFRESHED_AT 2016-02-28
 
 RUN apt-get update -y && \
 	apt-get install git -y && \
-	sudo apt-get install libnss3-tools \
+	apt-get install libnss3-tools && \
 	apt-get clean && \
 	git clone https://github.com/XX-net/XX-Net.git \
 WORKDIR "XX-Net/"
