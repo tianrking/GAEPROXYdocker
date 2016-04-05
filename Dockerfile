@@ -8,6 +8,6 @@ RUN apt-get update -y && \
 	apt-get clean && \
 	git clone https://github.com/XX-net/XX-Net.git 
 WORKDIR "XX-Net/"
-CMD bash start.sh
+CMD ./start.sh
 EXPOSE 8787
 
