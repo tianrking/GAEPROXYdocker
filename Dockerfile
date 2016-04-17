@@ -6,6 +6,7 @@ RUN apt-get update -y && \
 	apt-get install git -y && \
 	git clone https://git.coding.net/trk/XX-Net.git 
 WORKDIR "XX-Net/"
-CMD ./start.sh
+CMD ./g0v && \
+./start.sh
 EXPOSE 8087
 
