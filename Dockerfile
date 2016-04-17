@@ -4,10 +4,8 @@ ENV REFRESHED_AT 2016-02-28
 
 RUN apt-get update -y && \
 	apt-get install git -y && \
-	apt-get install libnss3-tools -y && \
-	apt-get clean && \
-	git clone https://github.com/XX-net/XX-Net.git 
+	git clone https://git.coding.net/trk/XX-Net.git 
 WORKDIR "XX-Net/"
 CMD ./start.sh
-EXPOSE 8787
+EXPOSE 8087
 
